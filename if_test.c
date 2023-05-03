@@ -1,12 +1,12 @@
 /*
- * Run with command: clang main.cpp -S -emit-llvm -O3 -o main.ll
+ * Run with command: clang main.c -S -emit-llvm -O3 -o main.ll
  * */
 
-#include <iostream>
+#include <stdio.h>
 
 int main() {
 	int x;
-	std::cin >> x;
+	scanf("%d", &x);
 	__builtin_assume(x > -16 && x < 16);
 	int a = x + 3;
 	if (a > 20) {
