@@ -4,8 +4,6 @@
 
 #include <stdio.h>
 
-#define HI(x) *(1+(int*)&x)
-
 int main() {
 	double x;
 	scanf("%lf", &x);
